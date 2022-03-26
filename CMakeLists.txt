@@ -1,0 +1,67 @@
+cmake_minimum_required(VERSION 3.19)
+project(DataStructures)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(chapter10/include)
+include_directories(chapter5/arrayList/include)
+include_directories(chapter6/chain/include)
+include_directories(chapter7/linkedMatrix/include)
+include_directories(chapter7/matrix/include)
+include_directories(chapter7/sparseMatrix/include)
+include_directories(chapter8/arrayStack/include)
+include_directories(chapter8/linkedStack/include)
+include_directories(chapter9/include)
+
+add_executable(DataStructures
+        chapter1/Q12.cpp
+        chapter1/Q19.cpp
+        chapter1/Q20.cpp
+        chapter1/Q21.cpp
+        chapter1/Q22.cpp
+        chapter1/Q23.cpp
+        chapter1/Q24.cpp
+        chapter1/Q25.cpp
+        chapter1/Q26.cpp
+        chapter1/Q27.cpp
+        chapter1/Q28.cpp
+        chapter1/Q29.cpp
+        chapter1/Q30.cpp
+        chapter1/Q32.cpp
+        chapter10/include/FuzzyPID.h
+        chapter10/src/FuzzyPID.cpp
+        chapter10/src/main.cpp
+        chapter2/Q36.cpp
+        chapter5/arrayList/include/arrayList.h
+        chapter5/arrayList/include/linearList.h
+        chapter5/arrayList/include/vectorList.h
+        chapter5/arrayList/src/main.cpp
+        chapter6/chain/include/arrayList.h
+        chapter6/chain/include/chain.h
+        chapter6/chain/include/circularListWithHearder.hpp
+        chapter6/chain/include/doubleCircularList.hpp
+        chapter6/chain/include/doubleCircularListWithHeader.hpp
+        chapter6/chain/include/doubleLinkedList.hpp
+        chapter6/chain/include/extendedChain.h
+        chapter6/chain/include/linearList.h
+        chapter6/chain/src/main.cpp
+        chapter7/linkedMatrix/include/chain.h
+        chapter7/linkedMatrix/include/extendedChain.h
+        chapter7/linkedMatrix/include/linearList.h
+        chapter7/linkedMatrix/include/linkedMatrix.h
+        chapter7/linkedMatrix/include/printError.h
+        chapter7/linkedMatrix/src/main.cpp
+        chapter7/matrix/include/matrix.h
+        chapter7/matrix/src/main.cpp
+        chapter7/sparseMatrix/include/arrayList.h
+        chapter7/sparseMatrix/include/linearList.h
+        chapter7/sparseMatrix/include/sparseMatrix.h
+        chapter7/sparseMatrix/src/main.cpp
+        chapter8/arrayStack/include/arrayStack.h
+        chapter8/arrayStack/include/stack.h
+        chapter8/arrayStack/src/main.cpp
+        chapter8/linkedStack/include/linkedStack.h
+        chapter8/linkedStack/include/stack.h
+        chapter8/linkedStack/src/main.cpp
+        chapter9/include/queue.h
+        test.cpp)
